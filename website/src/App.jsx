@@ -1,3 +1,8 @@
+/* App.jsx */
+/* Author: Nguyen-Hanh Nong */
+/* Purpose: This is the main component of the website. It contains the navigation bar and the routes to the other components. */
+
+/* Importing the necessary libraries and files for the application */
 import React, { Component } from "react";
 import NavBar from "./NavBar";
 import Dashboard from "./Dashboard";
@@ -8,8 +13,11 @@ import { Route, Routes } from "react-router";
 import { BrowserRouter } from "react-router-dom";
 import NoMatchPage from "./NoMatchPage";
 
+/* Exporing the App component */
 export default class App extends Component {
+  /* Rendering the component */
   render() {
+    /* Returning the routes which are nested with the navigation bar */
     return (
       <BrowserRouter>
       <NavBar/>
